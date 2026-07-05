@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+*.pyc
+transform_data/target/
+transform_data/logs/
+*.duckdb
+.ipynb_checkpoints/
+.user.yml
+mlruns/

@@ -1,0 +1,47 @@
+version: 2
+
+models:
+  - name: recommandation_prete
+    description: >
+      Table finale (Data Contract) utilisée pour entraîner le modèle de recommandation.
+    config:
+      contract:
+        enforced: true
+    columns:
+      - name: user_id
+        data_type: bigint
+        constraints:
+          - type: not_null
+        tests:
+          - not_null
+
+      - name: movie_id
+        data_type: bigint
+        constraints:
+          - type: not_null
+        tests:
+          - not_null
+
+      - name: title
+        data_type: varchar
+        constraints:
+          - type: not_null
+        tests:
+          - not_null
+
+      - name: rating
+        data_type: double
+        constraints:
+          - type: not_null
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: [0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0]
+
+      - name: genres
+        data_type: varchar
+        constraints:
+          - type: not_null
+        tests:
+          - not_null
