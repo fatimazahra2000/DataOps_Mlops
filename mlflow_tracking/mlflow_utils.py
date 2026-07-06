@@ -11,7 +11,10 @@ from mlflow.tracking import MlflowClient
 import joblib
 import os
 
-TRACKING_URI = "http://127.0.0.1:5000"
+import os
+from dotenv import load_dotenv
+load_dotenv()
+TRACKING_URI = os.getenv("MLFLOW_TRACKING_URI", "http://127.0.0.1:5000")
 MODEL_NAME   = "FilmRecommender"
 
 def setup_mlflow(experiment_name: str = "film-recommender"):
