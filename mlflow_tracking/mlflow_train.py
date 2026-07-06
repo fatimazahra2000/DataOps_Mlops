@@ -20,7 +20,8 @@ MODEL_DIR  = "ML/models"
 EXPERIMENT = "film-recommender"
 MODEL_NAME = "FilmRecommender"
 
-mlflow.set_tracking_uri("http://127.0.0.1:5000")
+import os
+mlflow.set_tracking_uri(os.getenv("MLFLOW_TRACKING_URI", "http://34.198.55.82:5000"))
 mlflow.set_experiment(EXPERIMENT)
 os.makedirs(MODEL_DIR, exist_ok=True)
 

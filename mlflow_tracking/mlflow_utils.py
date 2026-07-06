@@ -14,7 +14,7 @@ import os
 import os
 from dotenv import load_dotenv
 load_dotenv()
-TRACKING_URI = os.getenv("MLFLOW_TRACKING_URI", "http://127.0.0.1:5000")
+TRACKING_URI = os.getenv("MLFLOW_TRACKING_URI", "http://34.198.55.82:5000")
 MODEL_NAME   = "FilmRecommender"
 
 def setup_mlflow(experiment_name: str = "film-recommender"):
