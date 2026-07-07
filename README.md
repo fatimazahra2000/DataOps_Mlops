@@ -2,10 +2,7 @@
 
 Ce projet constitue l'infrastructure MLOps complète pour notre système de recommandation. Il automatise le cycle de vie du modèle, du développement au déploiement, en garantissant la reproductibilité et la collaboration au sein de l'équipe.
 
-## 👥 Équipe Projet
-* **Ingénieur Infrastructure/MLOps :** Amina Bouazza
-* **Membres de l'équipe :** Jihad El Betti, Hafsa El Hilali, Oumaima EL HABTI, AYMANE EL BADRY
-* **Encadrant :** Nadia Chafik
+
 
 ## 🔗 Accès aux services (Cloud Infrastructure)
 L'infrastructure est hébergée sur AWS et accessible via les points d'entrée suivants :
