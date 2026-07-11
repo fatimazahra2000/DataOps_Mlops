@@ -8,4 +8,4 @@ transform_data/logs/
 .user.yml
 mlruns/
 mlartifacts/
-ML/models/*.pkl
+ML/models/*.pkl.tmp_dagster_home_*/ 
